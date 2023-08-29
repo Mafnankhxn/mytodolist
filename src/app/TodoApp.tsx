@@ -22,10 +22,11 @@ const TodoApp = () => {
         setTasks(updatedTasks);
     };
 
-    return (
+    return (//main container starts here blue container
         <div className='bg-blue-400 h-1/2 w-1/2 my-auto grid justify-center rounded-xl shadow-xl' >
             <h1 className="text-center text-3xl mt-4 font-bold">Your best task managing buddy</h1>
-            <div className="container h-1/3 w-full flex flex-wrap justify-around gap-3">
+            {/* container of input and button starts here */}
+<div className="container h-1/3 w-full flex flex-wrap justify-around gap-3">
                 <input className='h-5/6 w-4/6 outline outline-slate-100 rounded-full pl-2'
                     type="text"
                     id="taskinput"
@@ -41,6 +42,7 @@ const TodoApp = () => {
                     Add Task
                 </button>
             </div>
+            {/* todos will apear here in this section it contains ul and delete button */}
             <div className="mt-4">
     <ul className="space-y-2">
         {tasks.map((task, index) => (
